@@ -1,32 +1,85 @@
-body {
-    background-color: #111;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background: #222;
-    padding: 80px 20px;
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
 }
 
-nav {
-    background: #000;
-    padding: 15px;
+.hero{
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
 }
 
-nav a {
-    color: gold;
-    text-decoration: none;
-    margin: 0 15px;
+.overlay{
+    max-width:800px;
 }
 
-section {
-    padding: 50px 20px;
+h1{
+    font-size:5rem;
+    margin-bottom:20px;
 }
 
-footer {
-    background: #000;
-    padding: 20px;
+.subtitle{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.date{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.button{
+    background:gold;
+    color:black;
+
+    padding:15px 30px;
+
+    text-decoration:none;
+    border-radius:50px;
+
+    font-weight:bold;
+}
+
+#countdown{
+    text-align:center;
+    padding:100px 20px;
+}
+
+#timer{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+#timer div{
+    background:#222;
+    padding:25px;
+    border-radius:15px;
+    min-width:120px;
+}
+
+#timer span{
+    font-size:3rem;
+    color:gold;
 }
