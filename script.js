@@ -1,21 +1,31 @@
-const weddingDate = new Date("June 14, 2028 14:00:00").getTime();
+const weddingDate = new Date(
+    "may 13, 2028 14:00:00"
+).getTime();
 
-const timer = setInterval(function () {
+setInterval(function () {
 
     const now = new Date().getTime();
 
     const distance = weddingDate - now;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const days = Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+    );
 
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24))
-        / (1000 * 60 * 60));
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
 
-    const minutes = Math.floor((distance % (1000 * 60 * 60))
-        / (1000 * 60));
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
 
-    const seconds = Math.floor((distance % (1000 * 60))
-        / 1000);
+    const seconds = Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+    );
 
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
