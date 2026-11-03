@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotte & Marco | Trouwen</title>
+    <title>Lotte & Marco</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Lotte & Marco</h1>
-        <p>Wij gaan trouwen!</p>
-        <p>13-05-2028</p>
-    </header>
+    <section class="hero">
 
-    <nav>
-        <a href="#verhaal">Ons Verhaal</a>
-        <a href="#dag">De Grote Dag</a>
-        <a href="#locatie">Locatie</a>
-        <a href="#rsvp">RSVP</a>
-    </nav>
+        <div class="overlay">
 
-    <section id="verhaal">
-        <h2>Ons Verhaal</h2>
+            <h1>Lotte & Marco</h1>
 
-        <p>
-            Hier kun je later jullie verhaal plaatsen.
-        </p>
+            <p class="subtitle">
+                Wij gaan trouwen
+            </p>
+
+            <p class="date">
+                13-05-2028
+            </p>
+
+            <a href="#countdown" class="button">
+                Bekijk onze dag
+            </a>
+
+        </div>
+
     </section>
 
-    <section id="dag">
-        <h2>De Grote Dag</h2>
+    <section id="countdown">
 
-        <ul>
-            <li>Ceremonie - Tijd volgt</li>
-            <li>Receptie - Tijd volgt</li>
-            <li>Diner - Tijd volgt</li>
-            <li>Feest - Tijd volgt</li>
-        </ul>
+        <h2>Wij tellen af naar onze grote dag</h2>
+
+        <div id="timer">
+
+            <div>
+                <span id="days">0</span>
+                <p>Dagen</p>
+            </div>
+
+            <div>
+                <span id="hours">0</span>
+                <p>Uren</p>
+            </div>
+
+            <div>
+                <span id="minutes">0</span>
+                <p>Minuten</p>
+            </div>
+
+            <div>
+                <span id="seconds">0</span>
+                <p>Seconden</p>
+            </div>
+
+        </div>
+
     </section>
-
-    <section id="locatie">
-        <h2>Locatie</h2>
-
-        <p>
-            Locatie volgt binnenkort.
-        </p>
-    </section>
-
-    <section id="rsvp">
-        <h2>RSVP</h2>
-
-        <p>
-            Laat ons weten of je aanwezig kunt zijn.
-        </p>
-
-        <a href="#">
-            Bevestig jouw aanwezigheid
-        </a>
-    </section>
-
-    <footer>
-        <p>
-            © 2026 Marco & Partner
-        </p>
-    </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
