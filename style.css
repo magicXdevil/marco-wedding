@@ -24,8 +24,7 @@ body{
 
     display:flex;
     align-items:center;
-    justify-content:flex-start;
-    padding-top:150px;
+    justify-content:center;
     text-align:center;
 }
 
